@@ -3,6 +3,11 @@ from .code import qsort as sort_func
 EXAMPLES = [
     [],
     [1],
+    [1, 0],
+    [0, 0],
+    [0, 0, 0],
+    [0, 1, 2],
+    [2, 1, 0],
 ]
 
 def print_examples():

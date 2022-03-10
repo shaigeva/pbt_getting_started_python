@@ -17,10 +17,10 @@ Start by running this from the repo root:
 ```
 
 ## Run tests:
-Go into one of the tests directories.
+Go into one of the chapter directories.
 For example:
 ```sh
-cd chapters/initial_setup
+cd chapters/01_initial_setup/
 ```
 Then run the tests:
 ```sh
