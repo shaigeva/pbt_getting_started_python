@@ -5,7 +5,7 @@ Although it's not important to understand how it works for the purposes of learn
 
 # High level
 
-*(if you're familiar with sorting algorithms - `qsort` is a quicksort variation that always uses the first element as the pivot)*
+*(if you're familiar with sorting algorithms - `qsort` is a quicksort variation that always uses the first element as the pivot, and has a simplified implementation sacrificing performance for clarity)*
  
 
 **`qsort` a recursive sorting function**.
@@ -26,7 +26,7 @@ Now Go over `rest_of_list` and divide it into two lists:
 1. `smaller_than_first`: all the numbers that are smaller-equal than first_item, and 
 2. `larger_than_first`: all the numbers that are larger than first_item.
 
-Because we need to return, a sorted list, all numbers in `smaller_than_first` must appear before `first_item` and all the items in `larger_than_first` must appear after `first_item`.
+Because we need to return a sorted list, all numbers in `smaller_than_first` must appear before `first_item` and all the items in `larger_than_first` must appear after `first_item`.
 
 But this is not enough: `smaller_than_first` and `larger_than_first` are not sorted internally.
 
@@ -39,3 +39,6 @@ So we’ll recursively call `qsort` and sort them, and then concatenate the resu
 1. Take the 1st number and the rest of the list.
 2. Put all the numbers smaller than that number before it and all the numbers larger than that number after it.
 3. Internally sort the smaller numbers and the larger numbers by recursively calling the function.
+
+
+**Note:** if you'd like to see an explanation of quicksort incl. graphics, there are many helpful videos on youtube. For example: https://www.youtube.com/watch?v=Hoixgm4-P4M. 
